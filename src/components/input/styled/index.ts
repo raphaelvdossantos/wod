@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { StyledComponent } from "styled-components";
+import React from 'react';
+import styled, { StyledComponent } from 'styled-components';
 
-interface InputProps {
+interface CustomInputProps {
   id: string;
   width?: string;
   heigth?: string;
@@ -9,24 +9,24 @@ interface InputProps {
 }
 
 const CheckboxInput = styled.input.attrs({
-  type: "checkbox",
+  type: 'checkbox',
 })``;
 
 const RadioInput = styled.input.attrs({
-  type: "radio",
+  type: 'radio',
 })``;
 
 const TextInput = styled.input.attrs({
-  type: "text",
+  type: 'text',
 })``;
 
 const PasswordInput = styled.input.attrs({
-  type: "password",
+  type: 'password',
 })``;
 
 const InputComponents: Record<
   string,
-  StyledComponent<"input", any, any, "type">
+  StyledComponent<'input', any, any, 'type'>
 > = {
   checkbox: CheckboxInput,
   radio: RadioInput,
@@ -34,8 +34,8 @@ const InputComponents: Record<
   password: PasswordInput,
 };
 
-function useInputComponent(props: Partial<InputProps>, componentType = "text") {
-  const Component = InputComponents[componentType];
+function useInputComponent(props: CustomInputProps, inputType = 'text') {
+  const Component = InputComponents[inputType];
 
   return React.createElement(Component, { ...props });
 }

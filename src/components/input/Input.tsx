@@ -1,5 +1,5 @@
-import { HTMLInputTypeAttribute } from "react";
-import useInputComponent from "./styled";
+import { HTMLInputTypeAttribute } from 'react';
+import useInputComponent from './styled';
 
 interface InputProps {
   id: string;
@@ -8,7 +8,8 @@ interface InputProps {
 }
 
 function Input(props: InputProps) {
-  return useInputComponent(props);
+  const { inputType } = props;
+  return useInputComponent(props, inputType);
 }
 
 export default Input;

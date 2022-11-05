@@ -7,14 +7,14 @@ interface GridProps<T> {
 
 function Grid<T extends object>(props: GridProps<T>) {
   const {
-    gridConfig: { rows, defaultComponent, defaultProps },
+    gridConfig: { data, defaultComponent, defaultProps },
   } = props;
 
   return (
     <div>
-      {rows.map((row) => (
+      {data.map((item) => (
         <GridRow
-          cells={row}
+          cells={item}
           defaultProps={defaultProps}
           component={defaultComponent}
         />
