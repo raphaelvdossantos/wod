@@ -1,10 +1,11 @@
-import { HTMLInputTypeAttribute } from 'react';
+import { CustomInput } from 'types/Input';
 import useInputComponent from './styled';
 
-interface InputProps {
+export interface InputProps extends Partial<HTMLInputElement> {
   id: string;
-  inputType?: HTMLInputTypeAttribute;
+  inputType?: CustomInput;
   disabled?: boolean;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 function Input(props: InputProps) {

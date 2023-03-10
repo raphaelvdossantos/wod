@@ -1,12 +1,13 @@
 import { Placement } from 'common/Label';
 import Input from 'components/input/Input';
-import { HTMLInputTypeAttribute } from 'react';
+import { CustomInput } from 'types/Input';
 import { Wrapper } from './styled';
 
-export interface InputWithLabelProps {
+export interface InputWithLabelProps extends Partial<HTMLInputElement> {
   label: string;
   placement?: Placement;
-  inputType?: HTMLInputTypeAttribute;
+  inputType?: CustomInput;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 function InputWithLabel(props: InputWithLabelProps) {

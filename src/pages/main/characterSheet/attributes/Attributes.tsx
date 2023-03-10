@@ -1,13 +1,12 @@
 import Grid from 'components/grid/Grid';
-import { InputWithLabel, InputWithLabelProps } from 'components/inputWithLabel';
 
-import { Placement } from 'common/Label';
 import { GridConfig, GridDisplay } from 'types/Grid';
+import LevelInput, { LevelInputProps } from 'components/levelInput/LevelInput';
 
 function Attributes() {
-  const gridConfig: GridConfig<InputWithLabelProps> = {
-    defaultComponent: InputWithLabel,
-    defaultProps: { inputType: 'checkbox', placement: Placement.left },
+  const gridConfig: GridConfig<LevelInputProps> = {
+    defaultComponent: LevelInput,
+    defaultProps: { levels: 5 },
     data: [
       [{ label: 'Strength' }, { label: 'Dexterity' }, { label: 'Stamina' }],
       [

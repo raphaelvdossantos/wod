@@ -1,11 +1,12 @@
 import React from 'react';
 import styled, { StyledComponent } from 'styled-components';
 
-interface CustomInputProps {
+interface CustomInputProps extends Partial<HTMLInputElement> {
   id: string;
-  width?: string;
-  heigth?: string;
+  width?: number;
+  heigth?: number;
   disabled?: boolean;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const CheckboxInput = styled.input.attrs({

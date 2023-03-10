@@ -1,4 +1,5 @@
 import Attributes from './attributes/Attributes';
+import Disciplines from './disciplines/Disciplines';
 import Header from './header/Header';
 import Skills from './skills/Skills';
 
@@ -8,6 +9,7 @@ function CharacterSheet() {
       <Header />
       <Attributes />
       <Skills />
+      <Disciplines />
     </div>
   );
 }
