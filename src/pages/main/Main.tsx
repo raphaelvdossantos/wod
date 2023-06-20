@@ -1,4 +1,4 @@
-import CharacterSheet from './characterSheet/CharacterSheet';
+import { CharacterSheet } from './characterSheet';
 import Chat from './chat/Chat';
 import { Wrapper } from './styled';
 

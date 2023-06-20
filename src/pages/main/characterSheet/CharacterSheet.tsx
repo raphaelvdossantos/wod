@@ -1,6 +1,7 @@
 import Attributes from './attributes/Attributes';
 import Disciplines from './disciplines/Disciplines';
 import Header from './header/Header';
+import ResonanceHunger from './others/ResonanceHunger';
 import Skills from './skills/Skills';
 
 function CharacterSheet() {
@@ -10,6 +11,7 @@ function CharacterSheet() {
       <Attributes />
       <Skills />
       <Disciplines />
+      <ResonanceHunger />
     </div>
   );
 }

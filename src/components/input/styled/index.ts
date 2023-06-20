@@ -11,7 +11,13 @@ interface CustomInputProps extends Partial<HTMLInputElement> {
 
 const CheckboxInput = styled.input.attrs({
   type: 'checkbox',
-})``;
+})`
+  clip-path: circle(45% at 50% 50%);
+
+  &:checked {
+    accent-color: black;
+  }
+`;
 
 const RadioInput = styled.input.attrs({
   type: 'radio',
