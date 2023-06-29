@@ -1,13 +1,13 @@
-import { CustomTextArea } from "./styled";
+import { CustomTextArea } from './styled';
 
 interface TextAreaProps {
-    width?: string;
-    height?: string;
+  width?: string;
+  height?: string;
+  id?: string;
 }
 
 function TextArea(props: TextAreaProps) {
-
-    return <CustomTextArea />
+  return <CustomTextArea id={props.id} />;
 }
 
 export default TextArea;
