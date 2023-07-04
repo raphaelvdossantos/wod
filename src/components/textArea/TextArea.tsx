@@ -7,7 +7,7 @@ interface TextAreaProps {
 }
 
 function TextArea(props: TextAreaProps) {
-  return <CustomTextArea id={props.id} />;
+  return <CustomTextArea {...props}/>;
 }
 
 export default TextArea;

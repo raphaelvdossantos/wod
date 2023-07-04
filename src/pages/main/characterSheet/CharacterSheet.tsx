@@ -8,7 +8,7 @@ import Skills from './skills/Skills';
 
 function CharacterSheet() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: "50%" }}>
       <Header />
       <Attributes />
       <Skills />

@@ -19,7 +19,7 @@ function Attributes() {
     display: GridDisplay.columns,
   };
 
-  return <Grid gridConfig={gridConfig}></Grid>;
+  return <Grid gridConfig={gridConfig}/>;
 }
 
 export default Attributes;

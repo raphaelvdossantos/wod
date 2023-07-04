@@ -3,11 +3,13 @@ import GridRow from './Row';
 
 interface GridProps<T> {
   gridConfig: GridConfig<T>;
+  gap?: string
 }
 
 function Grid<T extends object>(props: GridProps<T>) {
   const {
     gridConfig: { data, defaultComponent, defaultProps },
+    gap
   } = props;
 
   return (
@@ -17,6 +19,7 @@ function Grid<T extends object>(props: GridProps<T>) {
           cells={item}
           defaultProps={defaultProps}
           component={defaultComponent}
+          gap={gap}
         />
       ))}
     </div>

@@ -17,7 +17,7 @@ function Discipline(props: DispciplineProps) {
       <WithEditableLabel id={id}>
         <LevelInput levels={levels} id={id} label={''} />
       </WithEditableLabel>
-      <TextArea />
+      <TextArea width="100%"/>
     </Wrapper>
   );
 }

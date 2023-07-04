@@ -3,10 +3,12 @@ import Messages from "components/messages/Messages";
 import { Wrapper } from "./styled";
 
 function Chat() {
-    return <Wrapper>
+    return (
+    <Wrapper>
         <Messages/>
         <MessageInput/>
     </Wrapper>
+    )
 }
 
 export default Chat;

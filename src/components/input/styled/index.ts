@@ -25,7 +25,14 @@ const RadioInput = styled.input.attrs({
 
 const TextInput = styled.input.attrs({
   type: 'text',
-})``;
+})`
+  color: white;
+
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #550008;
+  margin-bottom: 3px; 
+`;
 
 const PasswordInput = styled.input.attrs({
   type: 'password',
